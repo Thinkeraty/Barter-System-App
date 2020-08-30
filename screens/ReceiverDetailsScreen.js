@@ -23,7 +23,7 @@ export default class ReceiverDetailsScreen extends Component{
   }
 
   getUserDetails=(userId)=>{
-      db.collection("users").where('email_id','==', userId).get()
+      db.collection("Users").where('email_id','==', userId).get()
       .then((snapshot)=>{
         snapshot.forEach((doc) => {
           console.log(doc.data().first_name);
@@ -37,13 +37,13 @@ export default class ReceiverDetailsScreen extends Component{
 
 getreceiverDetails(){
   console.log("receiver ",this.state.receiverId);
-  db.collection('users').where('username','==',this.state.receiverId).get()
+  db.collection('Users').where('user_email','==',this.state.receiverId).get()
   .then(snapshot=>{
     snapshot.forEach(doc=>{
       this.setState({
         receiverName    : doc.data().first_name,
-        receiverContact : doc.data().mobile_number,
-        receiverAddress : doc.data().address,
+        receiverContact : doc.data().phone_number,
+        receiverAddress : doc.data().user_address,
       })
     })
   });
@@ -112,9 +112,9 @@ componentDidMount(){
             </Card>
           </Card>
         </View>
-        <View style={{flex:0.3}}>
+        <View style={{flex:0.3, marginTop: 30}}>
           <Card
-            title={"receiver Information"}
+            title={"Receiver Information"}
             titleStyle= {{fontSize : 20}}
             >
             <Card>
