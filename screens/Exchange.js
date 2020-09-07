@@ -28,7 +28,7 @@ export default class Exchange extends Component{
 
   addItem=(itemName, description)=>{
     var email = this.state.email
-    exchangeId = this.createUniqueId()
+    var exchangeId = this.createUniqueId()
     db.collection('exchange_requests').add({
       'username' : email,
       'item_name': itemName,
@@ -222,7 +222,7 @@ export default class Exchange extends Component{
         <TextInput
           style={styles.formTextInput}
           placeholder ={"Item Name"}
-          maxLength ={10}
+          maxLength ={100}
           onChangeText={(text)=>{
             this.setState({
               itemName: text
@@ -246,7 +246,8 @@ export default class Exchange extends Component{
         <TextInput
             style={styles.formTextInput}
             placeholder ={"Item Value"}
-            maxLength ={8}
+            maxLength ={20}
+            keyboardType={'numeric'}
             onChangeText={(text)=>{
               this.setState({
                 itemValue: text

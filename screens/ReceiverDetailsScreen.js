@@ -108,7 +108,7 @@ componentDidMount(){
               <Text style={{fontWeight:'bold'}}>Name : {this.state.itemName}</Text>
             </Card>
             <Card>
-              <Text style={{fontWeight:'bold'}}>Reason : {this.state.description}</Text>
+              <Text style={{fontWeight:'bold'}}>Description : {this.state.description}</Text>
             </Card>
           </Card>
         </View>
