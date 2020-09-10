@@ -158,7 +158,7 @@ export default class WelcomeScreen extends Component {
               style={styles.cancelButton}
               onPress={()=>this.setState({"isModalVisible":false})}
             >
-            <Text style={{color:'#ff5722'}}>Cancel</Text>
+            <Text style={{color:'#ff5722', fontSize: RFValue(20), marginTop: RFValue(10)}}>Cancel</Text>
             </TouchableOpacity>
           </View>
           </KeyboardAvoidingView>
@@ -277,26 +277,29 @@ const styles = StyleSheet.create({
   },
   formTextInput:{
     width:"75%",
-    height:35,
+    height: RFValue(45),
     alignSelf:'center',
     borderColor:'#ffab91',
     borderRadius:10,
     borderWidth:1,
     marginTop:20,
-    padding:10
+    padding: RFValue(10),
+    paddingBottom:RFValue(10),
+    marginLeft:RFValue(20),
+    marginBottom:RFValue(14)
   },
   registerButton:{
+    height: RFValue(50),
+    marginTop:RFValue(20),
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: RFValue(3),
     width:200,
-    height:40,
-    alignItems:'center',
-    justifyContent:'center',
     borderWidth:1,
-    borderRadius:10,
-    marginTop:30
   },
   registerButtonText:{
     color:'#ff5722',
-    fontSize:15,
+    fontSize: RFValue(23),
     fontWeight:'bold'
   },
   cancelButton:{

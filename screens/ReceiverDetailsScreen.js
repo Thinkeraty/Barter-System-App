@@ -99,7 +99,7 @@ componentDidMount(){
             backgroundColor = "#eaf8fe"
           />
         </View>
-        <View style={{flex:0.3}}>
+        <View style={{flex:0.3,marginTop:RFValue(20)}}>
           <Card
               title={"Item Information"}
               titleStyle= {{fontSize : 20}}
@@ -159,7 +159,8 @@ const styles = StyleSheet.create({
   buttonContainer : {
     flex:0.3,
     justifyContent:'center',
-    alignItems:'center'
+    alignItems:'center',
+    marginTop:RFValue(30)
   },
   button:{
     width:200,

@@ -8,6 +8,8 @@ import * as Permissions from  'expo-permissions'
 import db from '../config'
 import firebase from 'firebase';
 
+import { RFValue } from 'react-native-responsive-fontsize'
+
 export default class CustomSidebarMenu extends Component{
   constructor() {
     super()
@@ -96,7 +98,7 @@ export default class CustomSidebarMenu extends Component{
               this.props.navigation.navigate('WelcomeScreen')
               firebase.auth().signOut()
           }}>
-            <Text style={styles.buttonText}>Logout</Text>
+            <Text style={{fontSize: RFValue(15), fontWeight: 'bold', marginLeft: RFValue(30) }}>Logout</Text>
           </TouchableOpacity>
         </View>
       </View>
