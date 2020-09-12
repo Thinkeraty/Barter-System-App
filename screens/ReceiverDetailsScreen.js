@@ -5,6 +5,8 @@ import firebase from 'firebase';
 
 import db from '../config.js';
 
+import { RFValue } from 'react-native-responsive-fontsize'
+
 export default class ReceiverDetailsScreen extends Component{
   constructor(props){
     super(props);

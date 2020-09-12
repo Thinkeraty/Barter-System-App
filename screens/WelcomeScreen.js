@@ -4,6 +4,8 @@ import { View, StyleSheet, Text, Image, Modal, TouchableOpacity,TextInput, Alert
 import db from '../config';
 import * as firebase from 'firebase';
 
+import  { RFValue } from 'react-native-responsive-fontsize';
+
 export default class WelcomeScreen extends Component {
   constructor(){
     super()

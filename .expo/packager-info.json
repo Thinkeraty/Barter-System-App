@@ -2,9 +2,9 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 8796,
-  "expoServerNgrokUrl": "https://r4-bpu.samyakjain.barter-system-app.exp.direct",
-  "packagerNgrokUrl": "https://packager.r4-bpu.samyakjain.barter-system-app.exp.direct",
-  "ngrokPid": 4852,
+  "packagerPid": 14352,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
   "webpackServerPort": null
 }
